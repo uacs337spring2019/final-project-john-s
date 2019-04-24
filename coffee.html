@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+	Author: John Stockey
+	Course: CSc 337
+	Section: 1
+
+	This page creates a simple web service for users to make combinations of coffee
+    and share their creations with other users.
+    -->
+	<head>
+		<title>Coffee Maker</title>
+
+		<meta charset="utf-8" />
+		<link href="coffee.css" type="text/css" rel="stylesheet" />
+		<script src="coffee.js" type="text/javascript"></script>
+	</head>
+
+	<body>
+        <div id="maincontent">
+            <div id="header">
+                <span>Coffee Maker</span>
+            </div>
+
+            <!-- Left side options, middle is the canvas, right side more options. -->
+            <div id="coffeedisplay">
+                <fieldset id="roasttype">
+                    <legend>Roast Type</legend>
+                    <label>
+						<input type="radio" name="roast" value="light" /> Light
+					</label>
+                    <label>
+						<input type="radio" name="roast" value="medium" /> Medium
+					</label>
+                    <label>
+						<input type="radio" name="roast" value="dark" /> Dark
+					</label>
+					<label>
+						<input type="radio" name="roast" value="night" /> The Night
+					</label>
+                    <input type="button" id="fillmug" value="Fill Mug" disabled />
+                </fieldset>
+
+                <canvas width="247" height="277" id="maincanvas"></canvas>
+
+                <fieldset id="creamandsugar">
+                    <legend>Cream and Sugar</legend>
+                    <input type="button" id="addcream" value="Add Cream" disabled />
+                    <input type="button" id="addsugar" value="Add Sugar" disabled />
+					<br />
+					<span id="creamercount">Cream: 0</span>
+					<span id="sugarcount">Sugar: 0</span>
+                </fieldset>
+            </div>
+
+			<input type="button" id="drink" value="Take a sip" disabled />
+
+			<!-- Dynamically displayed text. -->
+			<p id="dynamictext"></p>
+
+			<!-- Coffee combination submission -->
+			<fieldset id="coffeepost">
+				<legend>Submit your own Coffee Combination</legend>
+				<input type="text" id="coffeetitle" placeholder="Coffee's Name or Title" pattern="[A-Za-z]+" />
+				<input type="button" id="submitcombination" value="Submit" disabled />
+			</fieldset>
+
+			<!-- Dynamically built posts depicting coffee combinations for users to try. -->
+			<h2>Coffee Combinations</h2>
+			<div id="postsection">
+				<!--
+				Style Example:
+				<div class="post">
+					<h3>Name</h3>
+					<p>Creaminess: 5</p>
+					<p>Sweetness: 10</p>
+					<button type="button">Try it</button>
+				</div>
+				-->
+			</div>
+        </div>
+	</body>
+</html>

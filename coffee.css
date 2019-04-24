@@ -1,0 +1,90 @@
+/*
+Author: John Stockey
+Course: CSc 337
+Section: 1
+
+Style sheet for coffee.html. Some stylings include varying fonts, general positioning,
+and changes to backgrounds and font sizes.
+*/
+body {
+    margin: 0;
+}
+
+canvas {
+    background-image: url('mug.png');
+}
+
+fieldset {
+    width: fit-content;
+}
+
+body, #maincontent {
+    text-align: center;
+    background-color: lightgrey;
+}
+
+#maincontent {
+    height: 100%;
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#header {
+    height: 55px;
+    min-width: 1000px;
+    margin-right: 10px;
+    padding: 5px;
+    background-color: #9e522e;
+    border-radius: 25px;
+    box-shadow: inset 0px 0px 10px 0px;
+}
+
+#header > span {
+    height: inherit;
+    margin: 0;
+    padding-left: 5px;
+    float: left;
+    font-size: 36pt;
+    font-family: Garamond, serif;
+    font-weight: bold;
+    color: #d1b63f;
+}
+
+#coffeedisplay {
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+#roasttype {
+    float: left;
+}
+
+#creamandsugar {
+    float: right;
+}
+
+#roasttype, #creamandsugar {
+    width: 300px;
+    margin-top: 222px;
+}
+
+#dynamictext {
+    font-size: 24pt;
+}
+
+#coffeepost {
+    margin: 0 auto;
+}
+
+.post {
+    padding: 10px;
+    display: inline-block;
+    background-color: white;
+    border: 2px solid #9e522e;
+    box-shadow: inset 0px 0px 5px 0px;
+}
