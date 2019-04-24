@@ -1,7 +1,7 @@
 {
-  "name": "homework-11",
+  "name": "Coffee Service",
   "version": "1.0.0",
-  "description": "",
+  "description": "Coffee sharing service",
   "main": "coffee_service.js",
   "dependencies": {
     "body-parser": "^1.18.3",
@@ -10,9 +10,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node coffee_service.js"
   },
-  "author": "",
+  "author": "John",
   "license": "ISC"
 }
