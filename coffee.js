@@ -282,7 +282,7 @@ by the user interacting with the page.
         if (name.value !== "") {
             // Clear name.
             name.value = "";
-            let url = "http://localhost:3000/";
+            let url = "https://coffeemakerservice.herokuapp.com:process.env.PORT/";
             // Build the fetchOptions to be used.
             let fetchOptions = {
                 method : 'POST',
@@ -308,7 +308,7 @@ by the user interacting with the page.
     Clears out the existing combinations and adds in all posted/stored combos.
     **/
     function getCombinations() {
-        let url = "http://localhost:process.env.PORT/";
+        let url = "https://coffeemakerservice.herokuapp.com:process.env.PORT/";
         let postSection = document.getElementById("postsection");
         // Empty out postsection.
         document.getElementById("postsection").innerHTML = "";
