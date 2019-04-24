@@ -273,7 +273,7 @@ by the user interacting with the page.
         let text = document.getElementById("dynamictext");
 
         // Build JSON.
-        combo["name"] = name.value;
+        combo["name"] = name.value.substring(0,20);
         combo["color"] = coffeeColor;
         combo["sugar"] = sugarContent;
         combo["cream"] = creamerContent;
