@@ -52,7 +52,7 @@ by the user interacting with the page.
         if (coffeeHeight > 25) {
             context.beginPath();
             context.ellipse(COFFEE_X, COFFEE_Y, COFFEE_WIDTH, coffeeHeight, 0, Math.PI, 0);
-            context.ellipse(COFFEE_X, COFFEE_Y, COFFEE_WIDTH, 32, 0, 0, Math.PI)
+            context.ellipse(COFFEE_X, COFFEE_Y, COFFEE_WIDTH, 32, 0, 0, Math.PI);
             context.fill();
         }
     }
@@ -308,7 +308,7 @@ by the user interacting with the page.
     Clears out the existing combinations and adds in all posted/stored combos.
     **/
     function getCombinations() {
-        let url = "http://localhost:3000/";
+        let url = "http://localhost:process.env.PORT/";
         let postSection = document.getElementById("postsection");
         // Empty out postsection.
         document.getElementById("postsection").innerHTML = "";
@@ -354,7 +354,7 @@ by the user interacting with the page.
                         drawMug();
                         enableDrinkOptions();
                         updateCreamAndSugar();
-                    }
+                    };
 
                     // Append objects.
                     postDiv.appendChild(name);
