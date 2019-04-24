@@ -1,5 +1,5 @@
 {
-  "name": "Coffee Service",
+  "name": "CoffeeService",
   "version": "1.0.0",
   "description": "Coffee sharing service",
   "main": "coffee_service.js",
